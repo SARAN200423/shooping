@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eccccc;
+    color: #000000;
+}
+
+
+h1, h2 {
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    color: #363b40;
+}
+
+header {
+    background-color: #768874ad;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cart-link {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.566);
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(57, 120, 202, 0.879);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#cart-link button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the cart link to the right */
+    flex-grow: 3;
+}
+
+nav a {
+    color: #c31616;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+nav #cart-link:hover {
+    transform: scale(1.0);
+    transition: all 0.5s;
+    color: rgba(0, 26, 141, 0.468);
+}
+
+/* Main Section Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8bbdb133;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-list {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #497782;
+}
+
+.product {
+    background-color: #497782;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(96, 83, 49, 0.865);
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-item{
+    border: 10px;
+    padding: 19px;
+}
+
+
+
+
+/* Cart Items Styles */
+#cart-items .product {
+    background-color: #ece1e1;
+    border: px solid #5e9ec5;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cart-items .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(96, 79, 79, 0.527);
+}
+
+/* Checkout Button Hover */
+#checkout-button{
+    background-color: #0e151b;
+    color: #e0dede;
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 10px;
+}
+
+#checkout-button:hover {
+    border: 1px solid #bdc3c7;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #1f314b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #95a5a6;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+#cart{
+    background-color: #3b879189;
+    height: fit-content;
+}
+
+.add-to-cart-button {
+    background-color: #179cd6; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #304957; /* Darker green */
+}
+
+/* Remove From Cart Button Styles */
+.remove-from-cart-button {
+    background-color: #22334b; /* Red */
+    color: white; /* White text for contrast */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 6px rgb(0, 255, 251);
+}
+
+.remove-from-cart-button:hover {
+    background-color: #d32f2f; /* Darker red */
+    box-shadow: 0 4px 20px rgba(211, 47, 47, 0.5); /* Red shadow */
+}
